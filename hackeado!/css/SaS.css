@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.main-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.title-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.subtitle {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 8px #000000;
+    z-index: 10;
+}
+
+.popup-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c0c0c0;
+    color: #000000;
+    border: 3px solid #ffffff;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    width: 440px;
+    padding: 6px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+    z-index: 10;
+}
+
+.popup-header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: left;
+    padding: 4px 10px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.popup-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 25px 15px;
+}
+
+.popup-img {
+    width: 65px;
+    height: auto;
+}
+
+.popup-text {
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.popup-btn {
+    background-color: #c0c0c0;
+    border: 2px solid #ffffff;
+    border-right-color: #000000;
+    border-bottom-color: #000000;
+    padding: 6px 30px;
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.popup-btn:active {
+    border: 2px solid #000000;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.message {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer {
+    font-size: 1.1rem;
+    color: #cccccc;
+    letter-spacing: 1px;
+}
